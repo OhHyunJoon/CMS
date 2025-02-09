@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CMS</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+    <!-- 헤더 -->
+    <div class="header">
+        <div class="logo">
+            <a href="https://www.cmsedi.or.kr/cms">
+                <img src="img/logo_cms.avif" alt="로고">
+            </a>
+        </div>
+        <nav>
+            <ul class="depth1">
+                <li><a href="#">서비스 안내</a>
+                    <div class="navbg">
+                        <ul class="depth2">
+                            <li>
+                                <a href="">CMS 안내</a>
+                                <ul class="depth3">
+                                    <li><a href="">CMS 알아보기</a></li>
+                                    <li><a href="">비용 알아보기</a></li>
+                                    <li><a href="">부가 서비스</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">CMS 체험</a></li>
+                            <li><a href="">이벤트</a></li>
+                            <li><a href="">협력사 소개</a></li>
+                            <li>
+                                <a href="">기타 서비스</a>
+                                <ul class="depth3">
+                                    <li><a href="">빌링원플러스</a></li>
+                                    <li><a href="">트러스빌</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#">서비스 신청</a>
+                    <div class="navbg">
+                        <ul class="depth2">
+                            <li><a href="">온라인 신청</a></li>
+                            <li><a href="">상담 신청</a></li>
+                            <li>
+                                <a href="">신청 방법</a>
+                                <ul class="depth3">
+                                    <li><a href="">신규 신청</a></li>
+                                    <li><a href="">CMS 현금영수증</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#">서비스 지원</a>
+                    <div class="navbg">
+                        <ul class="depth2">
+                            <li><a href="">공지사항</a></li>
+                            <li><a href="">FAQ</a></li>
+                            <li><a href="">자료실</a></li>
+                            <li>
+                                <a href="">CMS Pro</a>
+                                <ul class="depth3">
+                                    <li><a href="">송수신 프로그램이란</a></li>
+                                    <li><a href="">CMS Pro 설치</a></li>
+                                    <li><a href="">파일송수신절차</a></li>
+                                    <li><a href="">CMS Pro Tip</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">민원 접수</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#">마이페이지</a>
+                    <div class="navbg">
+                        <ul class="depth2">
+                            <li>
+                                <a href="">이용기관</a>
+                                <ul class="depth3">
+                                    <li><a href="">이용기관 마이페이지</a></li>
+                                    <li><a href="">기본정보관리</a></li>
+                                    <li><a href="">승인현황조회</a></li>
+                                    <li><a href="">실시간 계좌조회/등록 내역 조회</a></li>
+                                    <li><a href="">센터 확인 불능내역 조회</a></li>
+                                    <li><a href="">이용기관 정보 변경 신청</a></li>
+                                    <li><a href="">테스트/서비스 실시 신청</a></li>
+                                    <li><a href="">요금조회</a></li>
+                                    <li><a href="">서비스 이용현황</a></li>
+                                    <li><a href="">보증보험 가입금액 조회</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">협력사</a>
+                                <ul class="depth3">
+                                    <li><a href="">이용기관 정보 조회</a></li>
+                                    <li><a href="">이용기관 정보 변경</a></li>
+                                    <li><a href="">협력사 영업장려금</a></li>
+                                    <li><a href="">협력사 정보 관리</a></li>
+                                    <li><a href="">온라인 신청</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">참가기관</a>
+                                <ul class="depth3">
+                                    <li><a href="">회원정보수정</a></li>
+                                    <li><a href="">공지사항</a></li>
+                                    <li><a href="">자료실</a></li>
+                                    <li><a href="">실무책임자연락처</a></li>
+                                    <li><a href="">장애대응</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div class="header-right">
+            <div class="login"><a href="">로그인 <img src="img/mo_ic_arrow_gray.avif" alt=""></a></div>
+            <div class="menu"><a href=""><img src="img/btn_ham.webp" alt=""></a></div>
+        </div>
+    </div>
+    <div class="sidebar">
+        <ul>
+            <li>
+                <a href="#">
+                    <div class="img-box">
+                        <img src="img/icon_side01.avif" alt="사이드1" class="default">
+                        <img src="img/icon_hover_side01.avif" alt="사이드1-1" class="hover">
+                    </div>
+                    <p>온라인신청</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="img-box">
+                        <img src="img/icon_side02.avif" alt="사이드2" class="default">
+                        <img src="img/icon_hover_side02.avif" alt="사이드2-1" class="hover">
+                    </div>
+                    <p>자료실</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="img-box">
+                        <img src="img/icon_side03.avif" alt="사이드3" class="default">
+                        <img src="img/icon_hover_side03.avif" alt="사이드3-1" class="hover">
+                    </div>
+                    <p>CMSPro 설치</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="img-box">
+                        <img src="img/icon_side04.avif" alt="사이드4" class="default">
+                        <img src="img/icon_hover_side04.avif" alt="사이드4-1" class="hover">
+                    </div>
+                    <p>마이페이지</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="img-box">
+                        <img src="img/icon_side05.avif" alt="사이드5" class="default">
+                        <img src="img/icon_hover_side05.avif" alt="사이드5-1" class="hover">
+                        <img src="img/mo_btn_chat_light_gray.avif" alt="사이드5-1" class="mo">
+                    </div>
+                    <p>Chat</p>
+                </a>
+            </li>
+        </ul>
+        <button class="fixed-button">
+            <div class="img-box">
+                <img src="img/btn_top.avif" alt="사이드버튼1" class="default">
+                <img src="img/btn_hover_top.avif" alt="사이드버튼1-1" class="hover">
+                <img src="img/mo_btn_arrow_top_black_gray.avif" alt="사이드버튼1-1" class="mo">
+            </div>
+        </button>
+    </div>
+    <div class="main">
+        <section class="section1">
+            <div class="left-swiper">
+                <div class="swiper banner-Swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                        </div>
+                        <div class="swiper-slide">
+                        </div>
+                        <div class="swiper-slide">
+                        </div>
+                    </div>
+                    <div class="pagenation-box">
+                        <div class="swiper-pagination"></div>
+                        <div class="stop-button"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="top">
+                    <div class="title">
+                        <h3>편리하고 안전한
+                            <strong>금융결제원 CMS 서비스</strong>
+                        </h3>
+                    </div>
+                    <div class="icon-wrap">
+                        <div class="icon-box">
+                            <a href="#">
+                                <div class="icon">
+                                </div>
+                                <h3>마이페이지</h3>
+                                <p>바로가기</p>
+                            </a>
+                        </div>
+                        <div class="icon-box">
+                            <a href="#">
+                                <div class="icon">
+                                </div>
+                                <h3>도입비용</h3>
+                                <p>알아보기</p>
+                            </a>
+                        </div>
+                        <div class="icon-box">
+                            <a href="#">
+                                <div class="icon">
+                                </div>
+                                <h3>상담</h3>
+                                <p>신청하기</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="title">
+                        <div class="title-left">
+                            <img src="img/icon_notice.avif" alt="알림 아이콘">
+                            <h3>알려드립니다</h3>
+                        </div>
+                        <div class="title-right">
+                            <a href="#">
+                                <p>더보기</p>
+                                <span class="icon-wrapper">
+                                    <img src="img/ic_arrow_right_defult_gray_01.avif" alt="기본 이미지"
+                                        class="default-image">
+                                    <img src="img/ic_arrow_on_blue.avif" alt="호버 이미지" class="hover-image">
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="text-box">
+                        <div class="text-banner">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <h3>CMS 온라인 신규신청 계약 간소화 시범실시 안내</h3>
+                                    <p>2023.12.21</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <h3>사회복지시설 CMS 온라인 상담페이지 신설</h3>
+                                    <p>2022.09.29</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <h3>임시공휴일(2025.01.27.)관련 CMS 서비스 안내</h3>
+                                    <p>2025.01.08</p>
+                                </div>
+                            </div>
+                            <div class="pagenation-box">
+                                <div class="swiper-pagination"></div>
+                                <div class="stop-button2"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section2">
+            <h2>신뢰와 안정의 금융결제원 CMS</h2>
+            <p>30년간의 운영으로 쌓아온 안정적인 <br class="mo"> 자금관리 솔루션을 경험해보세요.</p>
+            <div class="card-box">
+                <div class="card" id="card1">
+                    <img src="img/card1.avif" alt="card1">
+                    <p>국내 전 <span>은행 및 <br> 증권사</span> 참여</p>
+                </div>
+                <div class="card" id="card2">
+                    <img src="img/card2.avif" alt="card2">
+                    <p><span>업계 최초 서비스 </span>실시<br> (SINCE 1995)</p>
+                </div>
+                <div class="card" id="card3">
+                    <img src="img/card3.avif" alt="card3">
+                    <p>거래 건수 / 금액(연간) <br><span> 10억건+ 110조원+</span></p>
+                </div>
+            </div>
+            <a href="#" class="btn">CMS 알아보기
+                <div class="img-box">
+                    <img src="img/ic_arrow_right_defult_gray_01.avif" alt="" class="default">
+                    <img src="img/ic_arrow_right_selected_white_01.avif" alt="" class="hover-pc">
+                    <img src="img/mo_ic_arrow_right_default_white.avif" alt="" class="hover-mo">
+                </div>
+            </a>
+        </section>
+        <div class="line-banner">
+            <div class="left-banner">
+                <h3>미리 체험해 보는 CMS</h3>
+                <p>CMS의 편리한 기능들을 화면을 통해 설명해 드릴게요.</p>
+                <a href="#" class="btn">CMS 알아보기
+                    <div class="img-box">
+                        <img src="img/ic_arrow_right_defult_gray_01.avif" alt="" class="default">
+                        <img src="img/ic_arrow_right_selected_white_01.avif" alt="" class="hover-pc">
+                        <img src="img/ic_arrow_on_blue.avif" alt="" class="hover-mo">
+                    </div>
+                </a>
+                <img src="img/line-left.avif" alt="left-banner" class="banner-img">
+            </div>
+            <div class="right-banner">
+                <h3>CMS 온라인 신청</h3>
+                <p>고객별로 최적화된 자금관리 솔루션을 제안해 드릴게요.</p>
+                <a href="#" class="btn">CMS 알아보기
+                    <div class="img-box">
+                        <img src="img/ic_arrow_right_defult_gray_01.avif" alt="" class="default">
+                        <img src="img/ic_arrow_right_selected_white_01.avif" alt="" class="hover-pc">
+                        <img src="img/ic_arrow_on_blue.avif" alt="" class="hover-mo">
+                    </div>
+                </a>
+                <img src="img/line-right.avif" alt="right-banner" class="banner-img">
+            </div>
+        </div>
+        <section class="section3">
+            <div class="container">
+                <h3>나만의 CMS 파트너</h3>
+                <p>업종별 공식 협력사를 통해 전문적인 상담을 받아보세요.</p>
+                <div class="swiper icon-banner">
+                    <div class="banner-wrap">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="#" class="service-box n1">
+                                    <h2>세무/회계</h2>
+                                    <div class="img-box"><img src="img/service1.avif" alt="서비스1"></div>
+                                    <div class="hover-box">
+                                        <h3>가입대상</h3>
+                                        <p>회계법인,세무법인,회계사무소 <br> 세무사무소, 세무회계자문 등등</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="service-box n2">
+                                    <h2>후원</h2>
+                                    <div class="img-box"><img src="img/service2.avif" alt="서비스2"></div>
+                                    <div class="hover-box">
+                                        <h3>가입대상</h3>
+                                        <p>후원단체, 장학회,봉사회 등</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="service-box n3">
+                                    <h2>임대(렌탈)/할부</h2>
+                                    <div class="img-box"><img src="img/service3.avif" alt="서비스3"></div>
+                                    <div class="hover-box">
+                                        <h3>가입대상</h3>
+                                        <p>정수기렌탈,가전기기렌탈,IT기기렌탈,<br> 자동차렌탈,안전장비렌탈,의료기기렌탈, <br>
+                                            할부금융 등
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="service-box n4">
+                                    <h2>비영리</h2>
+                                    <div class="img-box"><img src="img/service4.avif" alt="서비스4"></div>
+                                    <div class="hover-box">
+                                        <h3>가입대상</h3>
+                                        <p>자선단체,연구소,재단,협동조합,<br> 노동조합,협회,동창회,종교단체 등</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="service-box n5">
+                                    <h2>IT 서비스</h2>
+                                    <div class="img-box"><img src="img/service5.avif" alt="서비스5"></div>
+                                    <div class="hover-box">
+                                        <h3>가입대상</h3>
+                                        <p>소프트웨어,정보통신,정보시스템,<br> 테크업체,카드단말기 등</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="service-box n6">
+                                    <h2>관리대행용역역</h2>
+                                    <div class="img-box"><img src="img/service6.avif" alt="서비스6"></div>
+                                    <div class="hover-box">
+                                        <h3>가입대상</h3>
+                                        <p>건물관리,시설관리,전기안전관리,<br> 소방관리,안전관리,청소용역 등</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="service-box n7">
+                                    <h2>어린이집/유치원</h2>
+                                    <div class="img-box"><img src="img/service7.avif" alt="서비스7"></div>
+                                    <div class="hover-box">
+                                        <h3>가입대상</h3>
+                                        <p>어린이집,병설유치원 <br>국공립유치원,사립유치원 등</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="service-box n8">
+                                    <h2>제조/도매/소매</h2>
+                                    <div class="img-box"><img src="img/service8.avif" alt="서비스8"></div>
+                                    <div class="hover-box">
+                                        <h3>가입대상</h3>
+                                        <p>제조업체,마트,도매물,<br>도매유통센터 등</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="service-box n9">
+                                    <h2>기타</h2>
+                                    <div class="img-box"><img src="img/service9.avif" alt="서비스9"></div>
+                                    <div class="hover-box">
+                                        <h3>가입대상</h3>
+                                        <p>화물운수,학원</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="service-box n10">
+                                    <h2>사회복지시설</h2>
+                                    <div class="img-box"><img src="img/service10.avif" alt="서비스10"></div>
+                                    <div class="hover-box">
+                                        <h3>가입대상</h3>
+                                        <p>사회복지법인,복지재단,사회복지관<br>
+                                            사회복지회,지역아동센터,요양원 등</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section4">
+            <div class="box-wrap">
+                <div class="left-box">
+                    <div class="board-box">
+                        <div class="title-box">
+                            <h3>공지사항</h3>
+                            <a href="#" class="btn more">
+                                더보기
+                                <span>
+                                    <div class="img-box">
+                                        <img src="img/ic_arrow_right_defult_gray_01.avif" alt="" class="default">
+                                        <img src="img/ic_arrow_right_selected_white_01.avif" alt="" class="hover-pc">
+                                        <img src="img/ic_arrow_on_blue.avif" alt="" class="hover-mo">
+                                    </div>
+                                </span>
+                            </a>
+                        </div>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <p class="txt-box">
+                                        <span>CMS 온라인 신규신청 계약 간소화 시범실시 안내</span>
+                                        <img src="img/mo_ic_new_square_blue.png" alt="신규게시물">
+                                    </p>
+                                    <p class="date">2023.12.21</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="txt-box">
+                                        <span>사회복지시설 CMS 온라인 상담페이지 신설</span>
+                                        <img src="img/mo_ic_new_square_blue.png" alt="신규게시물">
+                                    </p>
+                                    <p class="date">2022.09.29</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="txt-box">
+                                        <span>임시공휴일(2025.01.27.) 관련 CMS 서비스 안내</span>
+                                        <img src="img/mo_ic_new_square_blue.png" alt="신규게시물">
+                                    </p>
+                                    <p class="date">2025.01.08</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="txt-box">
+                                        <span>SK증권 계좌 실시간 부가서비스 일시 중단 안내</span>
+                                        <img src="img/mo_ic_new_square_blue.png" alt="신규게시물">
+                                    </p>
+                                    <p class="date">2024.12.02</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="txt-box">
+                                        <span>금융결제원 CMS 서비스 일시 중단 안내</span>
+                                        <img src="img/mo_ic_new_square_blue.png" alt="신규게시물">
+                                    </p>
+                                    <p class="date">2024.10.18</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="txt-box">
+                                        <span>금융결제원 CMS 테스트 서비스 일시 중단 안내</span>
+                                        <img src="img/mo_ic_new_square_blue.png" alt="신규게시물">
+                                    </p>
+                                    <p class="date">2024.09.26</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="board-box">
+                        <div class="title-box">
+                            <h3>자료실</h3>
+                            <a href="#" class="btn more">
+                                더보기
+                                <span>
+                                    <div class="img-box">
+                                        <img src="img/ic_arrow_right_defult_gray_01.avif" alt="" class="default">
+                                        <img src="img/ic_arrow_right_selected_white_01.avif" alt="" class="hover-pc">
+                                        <img src="img/ic_arrow_on_blue.avif" alt="" class="hover-mo">
+                                    </div>
+                                </span>
+                            </a>
+                        </div>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <p class="txt-box">
+                                        <span>CMS 참가기관 계좌번호체계 및 공동코드(2024.12.31. 기준)</span>
+                                        <img src="img/mo_ic_new_square_blue.png" alt="신규게시물">
+                                    </p>
+                                    <p class="date">2025.01.02</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="txt-box">
+                                        <span>CMS 실시통보서(빌링원플러스 이용신청기관용)</span>
+                                        <img src="img/mo_ic_new_square_blue.png" alt="신규게시물">
+                                    </p>
+                                    <p class="date">2023.10.31</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="txt-box">
+                                        <span>CMS 참가기관 계좌번호체계 및 공동코드(2024.8.6. 기준)</span>
+                                        <img src="img/mo_ic_new_square_blue.png" alt="신규게시물">
+                                    </p>
+                                    <p class="date">2025.01.24</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="txt-box">
+                                        <span>CMS 출금(입금)파일 송 수신 등 통지서비스 신청서 (HOST 기관용)</span>
+                                        <img src="img/mo_ic_new_square_blue.png" alt="신규게시물">
+                                    </p>
+                                    <p class="date">2024.12.13</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="txt-box">
+                                        <span>CMS 정보(사업자등록정보, 통장기재내역, 중계수수료납부계좌) 변경 신청서</span>
+                                        <img src="img/mo_ic_new_square_blue.png" alt="신규게시물">
+                                    </p>
+                                    <p class="date">2024.12.13</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="txt-box">
+                                        <span>학교 CMS 실시통보서(K에듀파인용)</span>
+                                        <img src="img/mo_ic_new_square_blue.png" alt="신규게시물">
+                                    </p>
+                                    <p class="date">2024.12.13</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="right-box">
+                    <div class="top">
+                        <div class="title">
+                            <img src="img/ic_call_blue.avif" alt="고객센터">
+                            <h3>고객센터</h3>
+                        </div>
+                        <a href="#">
+                            단축번호 안내
+                            <img src="img/ic_question_mark_off_gray.avif" alt="고객센터" class="default">
+                            <img src="img/ic_questionmark_on_gray.avif" alt="고객센터" class="hover">
+                        </a>
+                    </div>
+                    <div class="mid">
+                        <a href="tel:1577-5500">1577-5500</a>
+                        <div class="Working-time">
+                            <div>
+                                <img src="img/ic_time_gray.avif" alt="시계">
+                                <span>평일 09:00 ~ 17:45</span>
+                            </div>
+                            <p>(토,일,공휴일 휴무)</p>
+                            <img src="img/img_customercenter.avif" alt="이미지" class="right">
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <div class="icon-box">
+                            <a href="">
+                                <div class="img-box">
+                                    <img src="img/btn_support_selected_light_gray.avif" alt="" class="default">
+                                    <img src="img/btn_support_selected.avif" alt="" class="hover">
+                                </div>
+                                <p>원격지원상담</p>
+                            </a>
+                        </div>
+                        <div class="icon-box">
+                            <a href="">
+                                <div class="img-box">
+                                    <img src="img/btn_inquiry_defult_gray.avif" alt="" class="default">
+                                    <img src="img/ic_inquiry_selected.avif" alt="" class="hover">
+                                </div>
+                                <p>1:1 문의</p>
+                            </a>
+                        </div>
+                        <div class="icon-box">
+                            <a href="">
+                                <div class="img-box">
+                                    <img src="img/btn_faq_defult_light_gray.avif" alt="" class="default">
+                                    <img src="img/ic_faq_selected.avif" alt="" class="hover">
+                                </div>
+                                <p>FAQ</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="footer-top">
+                <div class="footer-nav">
+                    <div class="top-left">
+                        <a href="#">개인정보처리방침<img src="img/ic_new_tab_white.svg" alt=""></a>
+                        <a href="#">이용약관</a>
+                        <a href="#">고객서비스현장<img src="img/ic_new_tab_white.svg" alt=""></a>
+                        <a href="#">저작권정책<img src="img/ic_new_tab_white.svg" alt=""></a>
+                        <a href="#">오시는길<img src="img/ic_new_tab_white.svg" alt=""></a>
+                    </div>
+                </div>
+                <div class="family-btn">
+                    <a href="" class="program">보안 프로그램</a>
+                    <div class="family-site">
+                        <button class="family-tit">패밀리사이트</button>
+                        <div class="family-list">
+                            <div class="inner">
+                                <a href="#">금융결제원</a>
+                                <a href="#">계좌이체PG</a>
+                                <a href="#">계좌정보통합관리</a>
+                                <a href="#">금융인증센터</a>
+                                <a href="#">물품대금결제</a>
+                                <a href="#">기업 회계감사자료 온라인 발급</a>
+                                <a href="#">EXK(국가간ATM·송금)</a>
+                                <a href="#">어음정보센터(Knote)</a>
+                                <a href="#">전자어음(U-note)</a>
+                                <a href="#">비즈니로</a>
+                                <a href="#">이지로</a>
+                                <a href="#">인터넷지로</a>
+                                <a href="#">전자수입인지</a>
+                                <a href="#">카드로택스</a>
+                                <a href="#">나라빌</a>
+                                <a href="#">빌링원플러스</a>
+                                <a href="#">지로EDI</a>
+                                <a href="#">카드VAN</a>
+                                <a href="#">트러스빌(전자세금계산서)</a>
+                                <a href="#">CMS</a>
+                                <a href="#">현금카드</a>
+                                <a href="#">마이데이터 중계서비스</a>
+                                <a href="#">알고리즘 검증 통합포털</a>
+                                <a href="#">전자금융포럼</a>
+                                <a href="#">신용카트PG</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="bottom-left">
+                    <img src="img/logo_kftc_gray.png" alt="로고">
+                    <div class="address">
+                        <p>본관 : (우)06220 서울특별시 강남구 논현로 432(역삼동 717번지)</p>
+                        <p>분당센터 : (우)13556 경기도 성남시 분당구 정자일로213번길 9 (정자동 10-3)</p>
+                    </div>
+                </div>
+                <div class="bottom-right">
+                    <p>금융결제원 고객센터</p>
+                    <h3>1577-5500 <span>(평일 09:00 ~ 17:45)</span></h3>
+                </div>
+
+                <div class="copyright">Copyright 2024. KFTC <span>(Korea Financial Telecommunications & Clearings
+                        Institute)</span> All rights reserved.</div>
+            </div>
+        </footer>
+    </div>
+    <script>
+        var bannerSwiper = new Swiper(".banner-Swiper", {
+            spaceBetween: 30,
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            effect: "fade",
+            fadeEffect: { crossFade: true },
+            speed: 1500,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+        var textSwiper = new Swiper(".text-banner", {
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+        var bannerWrapSwiper = new Swiper(".banner-wrap", {
+            slidesPerView: 5,
+            speed: 2000,
+            spaceBetween: 20,
+            breakpoints: {
+
+                768: {
+                    slidesPerView: 3,
+                },
+                1440: {
+                    slidesPerView: 5,
+                },
+            },
+            scrollbar: {
+                el: ".swiper-scrollbar",
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+</body>
+
+</html>
