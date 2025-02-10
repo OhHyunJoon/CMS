@@ -38,4 +38,23 @@ $(function() {
         $('.header').removeClass('blurred');
     }
 });
+$(".fixed-button").click(function () {
+    $("html, body").animate({ scrollTop: 0 }, 500);
+});
+$(".menu").click(function () {
+    $(".menu .event").toggle();
+    $(".menu .default").toggle();
+    $(".gnb").toggle();
+});
+$(document).ready(function () {
+    $(".depth2 > li > p").click(function() {
+        let target = $(this).siblings(".depth3");
+        $(".depth3").not(target).slideUp();
+        target.stop().slideToggle();
+    });
+});
+
+$('a').click(function(e){
+    e.preventDefault();
+})
 });

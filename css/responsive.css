@@ -60,22 +60,28 @@
         right: 19rem;
     }
 }
+
 @media (max-width: 1440px) {
     .sidebar ul li a:hover .default {
         display: none;
     }
+
     .sidebar ul li a:hover .hover {
         display: block;
     }
+
     .fixed-button {
         background-color: transparent;
     }
+
     .section1 {
         padding: 0 2rem 12rem 0;
     }
+
     .title-right p {
         right: 9rem;
     }
+
     .sidebar {
         height: auto;
         box-shadow: none;
@@ -84,53 +90,66 @@
         bottom: 3rem;
         flex-direction: column-reverse;
     }
+
     .sidebar li {
         display: none;
     }
+
     .sidebar li:last-child {
         display: block;
     }
-    
-    
+
+
 }
+
 @media (max-width: 1024px) {
     .section4 {
         padding: 0px 2rem 11rem;
     }
+
     .section4 .box-wrap {
         flex-direction: column;
         height: 100%;
     }
-    .section4 .box-wrap .left-box,.section4 .box-wrap .right-box {
+
+    .section4 .box-wrap .left-box,
+    .section4 .box-wrap .right-box {
         max-width: none;
         width: 100%;
     }
+
     .right-box .bottom {
         height: 14rem;
     }
+
     .right-box .bottom .icon-box:first-child {
-        display: none
-        ;
+        display: none;
     }
+
     .right-box .bottom .icon-box {
         width: calc((99.999% - 1.5rem) / 2);
     }
+
     .section4 .box-wrap .right-box {
         margin-top: 2rem;
     }
+
     .left-swiper {
         width: 100%;
         margin: none;
     }
+
     .title-right p {
         right: 10rem;
     }
+
     .section1 {
         flex-direction: column;
         width: 100%;
         padding-left: 0;
         padding-right: 0;
     }
+
     .section1 .right {
         padding: 3rem 2rem 0;
         display: flex;
@@ -138,88 +157,160 @@
         width: 100%;
         max-width: none;
     }
-    .section1 .right .top,.section1 .right .bottom {
+
+    .section1 .right .top,
+    .section1 .right .bottom {
         width: 49%;
     }
 }
+
 @media screen and (max-width:1656px) {
     .pagenation-box .stop-button {
         right: 9rem;
     }
 }
+
 @media (max-width: 1280px) {
-    .line-banner .left-banner,.line-banner .right-banner {
+
+    .line-banner .left-banner,
+    .line-banner .right-banner {
         padding-left: 5rem
     }
 }
+
 @media (max-width: 1024px) {
     footer .footer-top .family-btn {
         position: absolute;
         bottom: 0;
     }
+
+    .section4 .box-wrap .board-box {
+        width: 100%;
+    }
+
+    .section4 .box-wrap .board-box:last-child {
+        display: none;
+    }
+
     .footer-bottom .bottom-right {
         bottom: 0;
         top: auto;
     }
+
     footer {
         padding: 0px 2rem;
         position: relative;
+        height: 50rem;
     }
+
     footer .footer-top .top-left a:first-child {
         margin: 0;
     }
+
     .line-banner img {
         display: none;
     }
+
     .header nav {
         display: none;
     }
+
     .section3 {
         padding: 0px 2rem 11rem;
     }
+    .gnb .depth1 > li+li {
+        margin-left: 5rem;
+    }
 }
+
 @media (max-width: 768px) {
-    .fixed-button .default,.sidebar ul li .default {
+    .pagenation-box .stop-button {
+        left: 21%;
+    }
+    .section1 .right .top h3 {
+        font-size: 1.3rem;
+    }
+    .section1 .right .top strong {
+        font-size: 1.8rem;
+    }
+    .right .bottom .title .title-left h3 {
+        font-size: 1.6rem;
+    }
+    .text-box .swiper-slide h3 {
+        font-size: 1.4rem;
+    }
+    .pagenation-box {
+        left: 8%;
+        bottom: 2%;
+    }
+    .left-swiper .swiper-pagination-bullet {
+        width: 4px;
+        height: 4px;
+        margin: 0 3px !important;
+    }
+    .left-swiper .swiper-pagination-bullet-active {
+        width: 10px;
+    }
+    .left-swiper {
+        height: 19rem;
+    }
+
+    .fixed-button .default,
+    .sidebar ul li .default {
         display: none;
     }
+
     .right-box .mid a {
         font-size: 2.7rem;
     }
-    .fixed-button .mo,.sidebar ul li .mo {
+
+    .fixed-button .mo,
+    .sidebar ul li .mo {
         display: block !important;
         width: 5.5rem;
     }
+
     .line-banner {
         display: none;
     }
+
     .section1 .right {
         flex-direction: column;
     }
-    .section1 .right .top,.section1 .right .bottom {
+
+    .section1 .right .top,
+    .section1 .right .bottom {
         width: 100%;
         height: auto;
         padding: 2.2rem 2rem 2.3rem;
     }
+
     .section2 {
         padding: 0 2rem 7.5rem;
     }
+
     .section2 .card-box {
         flex-direction: column;
     }
+
     .section2 .card {
         max-width: none;
         width: 100%;
         margin-bottom: 2rem;
     }
+
     .section2 h2 {
         font-size: 2.1rem;
     }
+
     .section2 p {
         font-size: 1.3rem;
     }
+
     .section2 .mo {
         display: block;
     }
+
     .btn {
         background-color: #0066dd;
         color: #fff;
@@ -228,49 +319,63 @@
         height: 4rem;
         font-size: 1.3rem;
     }
+
     .btn .img-box .default {
         display: none;
     }
+
     .btn .img-box .hover-mo {
         display: block;
         width: 13px;
         height: 7px;
     }
+
     .text-box .pagenation-box {
         left: 50%;
         transform: translateX(-50%);
     }
+
     .title-right p {
         right: 10rem;
     }
+
     .sidebar {
         width: auto;
         padding: 0 1.5rem;
     }
+
     .sidebar ul li p {
         display: none;
     }
+
     .section3 {
         padding: 0 0 7.5rem;
     }
+
     .section3 .container h3 {
         font-size: 2.1rem;
     }
+
     .section3 .container p {
         font-size: 1.3rem;
     }
+
     .icon-banner .banner-wrap {
         margin: 0;
         overflow: visible;
         padding-bottom: 3.5rem;
     }
-    .swiper-button-next, .swiper-button-prev {
+
+    .swiper-button-next,
+    .swiper-button-prev {
         display: none !important;
     }
+
     .icon-banner .swiper-slide a img {
         height: auto;
         width: 13.5rem;
     }
+
     .icon-banner .swiper-slide a .hover-box {
         display: block;
         background: transparent;
@@ -279,9 +384,11 @@
         color: #000;
         margin-bottom: 2rem;
     }
+
     .icon-banner .swiper-slide a h2 {
         font-size: 1.7rem;
     }
+
     .icon-banner .swiper-slide a {
         max-width: none;
         height: auto;

@@ -51,20 +51,20 @@ html,body {
 .header.blurred {
     backdrop-filter: blur(30px);
 }
-.logo {
+.header .logo {
     width: 16.5rem;
     height: 6rem;
     border-radius: 5rem;
     background-color: #fff;
     position: relative;
 }
-.logo a{
+.header .logo a{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 6rem;
 }
-nav {
+.header nav {
     width: 65rem;
     height: 6rem;
     border-radius: 3rem;
@@ -76,24 +76,24 @@ nav {
     align-items: center;
     font-family: 'NotoSans';
 }
-nav a{
+.header nav a{
     color: #000;
 }
-nav .depth1 {
+.header nav .depth1 {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-nav .depth1 > li {
+.header nav .depth1 > li {
     margin: 15px;
 }
-nav .depth1 > li > a:hover {
+.header nav .depth1 > li > a:hover {
     font-family: 'NotoSansB';
 }
 .navbg {
     display: none;
 }
-.depth2 {
+.header .depth2 {
     position: absolute;
     top: 0; left: 0;
     width: 1920px;
@@ -103,24 +103,24 @@ nav .depth1 > li > a:hover {
     justify-content: center;
     z-index: -1;
 }
-.depth2 > li {
+.header .depth2 > li {
     padding-left: 3rem;
     width: 240px;
 }
-.depth2 > li > a {
+.header .depth2 > li > a {
     padding-bottom: 2rem;
     font-family: 'NotoSansB';
 }
-ul.depth3 {
+.header ul.depth3 {
     padding-top: 2rem;
 }
-.depth3 li {
+.header .depth3 li {
     padding-top: 1rem;
 }
-.depth3 li a {
+.header .depth3 li a {
     font-size: 1.6rem;
 }
-.depth3 li a:hover {
+.header .depth3 li a:hover {
     color: #0064dd;
 }
 .header-right {
@@ -155,6 +155,59 @@ ul.depth3 {
     position: absolute;
     top: 50%; left: 50%;
     transform: translate(-50%,-50%);
+}
+.header-right .menu .event {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+.gnb {
+    /* position: fixed; */
+    width: 100%;
+    background-color: #fff;
+    padding: 12rem 0 6rem;
+    height: auto;
+    display: none;
+}
+.gnb .depth1 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.gnb .depth1 > li+li {
+    margin-left: 18rem;
+}
+.gnb .depth1>li> p {
+    font-size: 2rem;
+    font-family: 'NotoSansSB';
+    display: flex;
+    align-items: center;
+}
+.gnb .depth1>li p img {
+    margin-right: .5rem;
+}
+.gnb .depth2 {
+    padding: 2rem 0 0 5rem;
+    line-height: 3.5rem;
+}
+.gnb .depth2>li {
+    font-size: 1.6rem;
+    font-family: 'NotoSansSB';
+}
+.gnb .depth2>li p a{
+    display: flex;
+    align-items: center;
+}
+.gnb .depth2>li p img{
+    width: 1rem;
+    margin-left: 1rem;
+}
+.gnb .depth3>li a{
+    font-size: 1.4rem;
+    color: #616161;
+}
+.gnb .depth3{
+    display: none;
 }
 .main {
     padding-top: 10.6rem;
@@ -1173,5 +1226,5 @@ footer .footer-top .family-btn .family-site .family-list .inner a {
     display: none;
 }
 .fixed-button .hover {
-    display: none !important;
+    display: none;
 }
