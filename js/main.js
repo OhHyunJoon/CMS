@@ -9,23 +9,23 @@ $(function() {
     $('.depth1').mouseleave(function(){
         $('.navbg').stop().hide();
     })
-    
+
     $('.stop-button').click(function () {
         $(this).toggleClass('start');
     
         if ($(this).hasClass('start')) {
-            swiper.autoplay.stop();
+            bannerSwiper.autoplay.stop();
         } else {
-            swiper.autoplay.start();
+            bannerSwiper.autoplay.start();
         }
     });
     $('.stop-button2').click(function () {
         $(this).toggleClass('start');
     
         if ($(this).hasClass('start')) {
-            swiper.autoplay.stop();
+            textSwiper.autoplay.stop();
         } else {
-            swiper.autoplay.start();
+            textSwiper.autoplay.start();
         }
     });
     $('.family-site').click(function(){
